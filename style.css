@@ -1,0 +1,166 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* __________________________header */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: 1110px;
+  margin: 0 auto;
+  padding-top: 38px;
+  margin-bottom: 105px;
+}
+
+.logo {
+  display: inline-block;
+  width: 45%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #555252;
+}
+
+.logo>span {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.site-nav {
+  display: inline-block;
+}
+
+.nav-list {
+  display: inline-block;
+}
+
+.nav-list>li {
+  display: inline-block;
+  margin-right: 33px;
+  font-style: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0101;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.nav-list-item:hover {
+  color: #1abc9c;
+  
+}
+
+.nav-list-item:nth-child(6) {
+  margin: 0;
+}
+
+/* ___________________________title */
+
+.title {
+    font-size: 38px;
+    text-align: center;
+    color: #515151;
+    width: 650px;
+    margin: 50px auto 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+ .title::after{
+  content: "";
+  background-color: #1abc9c;
+  display: block;
+  margin: 32px auto 0 auto;
+  transition: .5s;
+  width: 0;
+  height: 0;
+}
+
+.title:hover:after {  
+  width: 168px;
+  height: 7px;
+}
+
+/* _________________________picture */
+
+.main-list {
+  width: 1170px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.main-list-item {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+} 
+
+.card {
+  width: 255px;
+  height: 360px;
+  /* margin: 0 auto; */
+  transition: .5s;
+  
+}
+
+.picture {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.info {
+  width: 100%;
+  background-color: rgb(90, 90, 90);
+  height: 40px;
+  font-size: 0;
+}
+
+.name {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: #323232;
+  line-height: 40px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.price {
+  display: inline-block;
+  width: 55px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 12px;
+  font-size: 18px;
+  color: white;
+}
+
+.card:hover .name {
+ background-color: #1abc9c;
+ transition: 0.5s;
+}
+
+.card:hover .price {
+  background-color: #7fd9c7;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.main-list-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+
